@@ -34,40 +34,24 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="about">About</Link>
+                <NavLink to="about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="services">Services</NavLink>
+              </li>
+              <li>
+                <NavLink to="about">Contact</NavLink>
+              </li>
+              <li>
+                <NavLink to="about">Login</NavLink>
+              </li>
+              <li>
+                <NavLink to="about">Register</NavLink>
               </li>
 
-              <li tabIndex="0">
-                <span className="justify-between cursor-pointer">
-                  Services
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </span>
-                <ul className="p-2 bg-gray-100">
-                  <li>
-                    <Link to="/">Home Care</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Home Care +</Link>
-                  </li>
-                </ul>
-                <li>
-                  <Link to="login">About</Link>
-                </li>
-                <li>
-                  <Link to="register">About</Link>
-                </li>
-              </li>
               <li>
                 <div className="form-control mt-3">
                   <input
