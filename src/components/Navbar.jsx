@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link, BrowserRouter, Route, Outlet, Navigate, NavLink} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,79 +28,69 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
-              <li tabIndex="0">
-                <span className="justify-between cursor-pointer">
-                  Books
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </span>
-                <ul className="p-2 bg-gray-100">
-                  <li>
-                    <Link to="/">Submenu 1</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Submenu 2</Link>
-                  </li>
-                </ul>
+              <li>
+                <NavLink to="/about">About</NavLink>
               </li>
+              <li>
+                <NavLink to="/services">Services</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+              <li>
+                <NavLink to="/login">Login</NavLink>
+              </li>
+              <li>
+                <NavLink to="/register">Register</NavLink>
+              </li>
+
               <li>
                 <div className="form-control mt-3">
                   <input
                     type="text"
-                    placeholder="Search books..."
+                    placeholder="Search..."
                     className="input input-bordered input-primary w-full"
                   />
                 </div>
               </li>
             </ul>
           </div>
-          <Link href="/" className="btn btn-ghost normal-case text-2xl">
-            Bookstore
-          </Link>
+          <NavLink to="/" className="btn btn-ghost normal-case text-2xl">
+            West Coast Care
+          </NavLink>
+
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/" >Home</NavLink>
             </li>
-            <li tabIndex="0">
-              <span>
-                Books
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </span>
-              <ul className="p-2 bg-gray-100">
-                <li>
-                  <Link to="/">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link to="/">Submenu 2</Link>
-                </li>
-              </ul>
+            <li>
+            <NavLink to="/about" exact>About</NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/services" exact>Services</NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/contact" >Contact</NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/login" >Login</NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/register" >Register</NavLink>
             </li>
           </ul>
         </div>
+
         <div className="navbar-end hidden lg:flex">
           <div className="form-control">
             <input
               type="text"
-              placeholder="Search books..."
+              placeholder="Search..."
               className="input input-bordered input-primary w-full"
             />
           </div>
