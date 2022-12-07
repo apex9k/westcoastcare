@@ -28,9 +28,9 @@ export default function App() {
         <Route path="contact" element={<Contact />} > </Route>
         <Route path="services" element={<Service />} > </Route>
         <Route path="register" element={<Register />} > </Route>
-        <Route path="login" element={<Login />} ></Route>
-        <Route path="reset" element={<Reset />} > </Route>
-        <Route path="dashboard" element={<Dashboard />}></Route>
+        <Route path="/login" element={<Login />} ></Route>
+        <Route path="/reset" element={<Reset />} > </Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/*" element={<ErrorPage />} ></Route>
     </Routes>
 

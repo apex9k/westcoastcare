@@ -1,6 +1,6 @@
 import React from 'react';
 import {createRoot}  from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Link, HashRouter} from 'react-router-dom';
 
 import App from "./App";
 import "./index.css";
@@ -8,9 +8,9 @@ import "./index.css";
 
 const root = createRoot(document.getElementById("root"))
 root.render(
-    <BrowserRouter>
+    <HashRouter>
         <App />
-    </BrowserRouter>
+    </HashRouter>
     )
 document.getElementById('root');
 

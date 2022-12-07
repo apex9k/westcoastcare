@@ -1,7 +1,8 @@
 {
-  "name": "bookstore",
+  "name": "westcoastcare",
   "version": "0.1.0",
   "private": true,
+  "homepage":".",
   "dependencies": {
     "@heroicons/react": "^2.0.13",
     "@storybook/react": "^6.5.14",

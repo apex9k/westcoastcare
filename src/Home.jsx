@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./components/Layout";
 import heroLogo from "./assets/banner.png";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import slider1 from "./assets/logo(2).png";
 import slider2 from "./assets/logo(3).png";
 import slider3 from "./assets/logo(4).png";
@@ -20,12 +20,12 @@ export default function Home() {
           </div>
           <div>
             <h1 className="text-5xl font-bold leading-normal text-white">
-              West Coast Care
+              Warm Caring and Compassionate
             </h1>
             <p className="py-6 text-gray-300">
             We are doing home care different. Putting you directly in touch with a certified health care assistant. You pay your health care assistant directly through our easy to use payment portal. No longer are you paying for large corporate overhead. You are paying for the care you need.
             </p>
-            <Link to="about" className="btn btn-primary mt-4">Learn more</Link>
+            <NavLink to="about" className="btn btn-primary mt-4">Learn more</NavLink>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function Home() {
           <div>
             <h1 className="text-7xl font-bold">Health Care With Love.</h1>
             <p className="py-6">Create a long lasting relationship with your care provider. Contact them directly and know when you pay them the money stays with them. We take the time to properly check all our Care+ certified caregivers. All our Care+ caregivers carry personal insurance and have had criminal record checks. </p>
-            <Link to="Contact" className="btn btn-primary">Lets Talk</Link>
+            <NavLink to="Contact" className="btn btn-primary">Lets Talk</NavLink>
           </div>
         </div>
       </div>
