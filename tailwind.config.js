@@ -5,6 +5,7 @@ module.exports = {
   theme: {
       container: {
           center: true,
+          themes: ["cupcake", "dark", "cmyk"],
       },
   },
   plugins: [

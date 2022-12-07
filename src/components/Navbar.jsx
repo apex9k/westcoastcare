@@ -1,12 +1,6 @@
 import React from "react";
 import {Link, BrowserRouter, Route, Outlet, Navigate, NavLink} from "react-router-dom";
-import Home from "../Home.jsx";
-import register from "../Register";
-import Login from "../Login";
-import Contact from "../Contact.jsx";
-import About from "../About.jsx";
-import dashboard from "../Dashboard";
-import services from "../Services";
+
 const Navbar = () => {
   return (
     <div className="bg-base-200 py-2">
@@ -37,19 +31,19 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="about">About</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink to="services">Services</NavLink>
+                <NavLink to="/services">Services</NavLink>
               </li>
               <li>
-                <NavLink to="about">Contact</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
               <li>
-                <NavLink to="about">Login</NavLink>
+                <NavLink to="/login">Login</NavLink>
               </li>
               <li>
-                <NavLink to="about">Register</NavLink>
+                <NavLink to="/register">Register</NavLink>
               </li>
 
               <li>
